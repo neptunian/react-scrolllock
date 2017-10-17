@@ -2,7 +2,7 @@
   "name": "react-scrolllock",
   "version": "1.0.8",
   "description": "Prevent scroll on the body when component is mounted.",
-  "main": "index.js",
+  "main": "lib/ScrollLock.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jossmac/react-scrolllock.git"
@@ -19,11 +19,23 @@
     "url": "https://github.com/jossmac/react-scrolllock/issues"
   },
   "peerDependencies": {
-    "react": "^0.14 || ^15.0"
+    "react": "^0.14 || ^15.0 || ^16.0"
   },
   "homepage": "https://github.com/jossmac/react-scrolllock#readme",
   "dependencies": {
-    "create-react-class": "^15.5.2",
     "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.10",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "uglify-es": "^3.1.3"
   }
 }
